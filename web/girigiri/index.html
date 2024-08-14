@@ -1,0 +1,567 @@
+<!--我好像发现有人在偷看我的源码唉？
+□■■■■■■■■■■□□□□■□■■■■■□□□□□□□□■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□
+□■□□□■□□□□□□■■■□□■□□□■□□□■■■■■■■■■■□□■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□
+□■□■■■■■■■□□□□■□□■□□□■□□□■□□□□□□□□□□□□□□□■□□□□□□□■■■■□□□□□□□□□□□□□□
+□■□■□□□□□■□□□□■□□■■■■■□□□■□■■■■■■■□□□□□□□■□□□□□□□□■□□■□□□□□□□□□□□□□
+□■□■■■■■■■□□■■■■□□□□□□□□□■□□□□□□■□□□□□□□□■□□□□□□□□■□□■□□□□□□□□□□□□□
+□■□■□□□□□■□□□□■□□■■■■■□□□■□□■■□■□□□□■■■■■■■■■■■□□□■■■□□■■□■■□□□■■■■
+□■□■■■■■■■□□□■■■□□□■□□□□□■□□□□■□□□□□□□□□■□■□□□□□□□■□□■□□■□□■□□■□□■□
+□■□□■□■□■□□□□■■□■□□■□□□□□■■■■■■■■■■□□□□□■□■□□□□□□□■□□■□□■□□■□□□■■□□
+□■□■□■■□□■□□■□■□□■■■■■□□□■□□□□■□□□■□□□□■□□■□□□□□□□■□□■□□■□□■□□■□□□□
+□■□□□□□■□□□□□□■□□□□■□□□□□■□□□□■□□■□□□□■□□□■□□□■□□■■■■□□□□■■■■□■■■■□
+□■□■□■□□■□■□□□■□□□□■□□□□□■□□□□■□□□□□□■□□□□■□□□■□□□□□□□□□□□□□□□■□□□■
+■□■□□■■■■□■□□□■□■■■■■■■□■□□□□■■□□□□□■□□□□□□■■■■□□□□□□□□□□□□□□□□■■■□
+--><!doctype html>
+<html id="html"><meta charset="UTF-8"><title>ギリギリ爱 - GiriGiriLove</title><meta name="keywords" content="ギリギリ爱,超时空要塞Δ,禁绝边境线,鮟鱇鱼,いけないボーダーライン,无缝洗脑高能,girigiri,girigirieye">
+<meta name="description" content="ギリギリ爱 いけないボーダーライン 難易度Gでも 全て壊してみせる キリキリ舞 さらなるGへと 意識が溶ける 体は制御不能 イッちゃうかもね ふざけあった友達と 求めあったあの人と">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+    
+<style>
+body,h1,h2,h3,h4,p,form,ol,ul{margin:0}
+ol,ul{padding:0}
+html,textarea,input,option,select,button{font:1.2em 'PT serif',\5FAE\8EDF\6B63\9ED1\9AD4,\5FAE\8F6F\96C5\9ED1,\534E\6587\7EC6\9ED1,serif;color:#222}
+h1,h2,h3,h4{font-weight:800}
+textarea:focus,input:focus{outline:0}
+::selection{background:rgba(0,149,255,0.1)}
+ul{list-style-type:none}
+a{color:#05A;text-decoration:none}
+img{border:0 none}
+.o{overflow:hidden;zoom:1}
+.l{float:left}
+.r{float:right}
+.c:after{content:'.';display:block;height:0;clear:both;visibility:hidden}
+* html .c{height:1%}
+.h{pointer-events:none;opacity:0}
+xmp{display:none}
+a,input{transition:.3s ease;}
+
+
+
+
+audio{
+	width:100%;
+}
+html{
+	background:red 50% 50%;
+	color:red;
+	transition:background 3s ease;
+}
+html,body{
+	height:100%;
+	box-sizing:border-box;
+	margin:0;
+	overflow:hidden;
+}
+body{
+	padding:1em;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+footer{
+	position:absolute;
+	left:0;right:0;
+	bottom:0;
+}
+p{
+	margin:0;
+}
+.cnzz{
+	float:right;
+}
+b:after{
+	content:attr(dir);
+}
+button{
+	transform:translate(-50%,0);
+	background:red;
+	color:blue;
+	white-space:nowrap;
+}
+#btn{
+	position:absolute;
+	bottom:30px;
+	left:50%;
+	font-size:3em;
+
+}
+.girigiri{
+	pointer-events:none;
+	font-size:2.4em;
+	text-shadow:1px 2px 0 green;
+	position:absolute;
+
+	-webkit-transform:translate(-50%,-100px);
+			transform:translate(-50%,-100px);
+	height:1em;
+	white-space:nowrap;
+	font-weight:bold;
+
+	-webkit-animation: flash 2s;
+			animation: flash 2s;
+}
+
+@-webkit-keyframes flash{
+	from{
+		-webkit-transform:translate(-50%,0);
+	}
+}
+@keyframes flash{
+	from{
+		transform:translate(-50%,0);
+	}
+}
+footer{
+	font-size:.8em;
+}
+.实时靠{
+	pointer-events:none;
+	position:absolute;
+
+	top:60px;
+	left:0;right:0;
+	text-align:center;
+	font-weight:800;
+	font-size:1.5em;
+	font-size:5vw;
+	font-family:sans-serif;
+	text-shadow:.2em .2em 0 green;
+
+	-webkit-animation:.3s steps(5) infinite;
+	   -moz-animation:.3s steps(5) infinite;
+		-ms-animation:.3s steps(5) infinite;
+			animation:.3s steps(5) infinite;
+	-webkit-animation-name:shake;-moz-animation-name:shake;-ms-animation-name:shake;animation-name:shake;
+}
+
+/* 震颤 */
+@-webkit-keyframes shake{
+	50%{-webkit-transform:scale(1.1);}
+
+	33%{color:red;}
+	66%{color:yellow;}
+}
+@-moz-keyframes shake{
+    50%{-moz-transform:scale(1.1);}
+	33%{color:red;}
+	66%{color:yellow;}
+}
+@-ms-keyframes shake{
+    50%{-ms-transform:scale(1.1);}
+	33%{color:red;}
+	66%{color:yellow;}
+}
+@keyframes shake{
+   50%{transform:scale(1.1);}
+	33%{color:red;}
+	66%{color:yellow;}
+}
+</style>
+<audio id="FM" controls loop></audio>
+
+
+<button id="全屏显示">  全屏  </button>
+<span class="实时靠">ギリギリ*<b id=n></b></span>
+<footer>
+	<p class="cnzz">
+		<a onclick="alert(鬼畜告急文案)">💊</a> 
+		<!-- <a onclick="alert(免费邮箱文案)">免费邮箱</a> -->
+		
+	</p>
+
+</footer>
+<script src="http://1.mouto.org/x.js"></script>
+<script>
+
+图们=[
+	'51911EDD-F01A-4B09-9876-ECC0CCEB2438.gif',
+	'2A1A24A4AC7BC9513F97C5D727200CC2.gif',
+	'BF080CE80F8B65EF9E4B9A99FEF9B0ED.gif',
+	'200F56119B5DC6BCF820E5A4E40FAF30.gif',
+	'489B2E49811520A00C4B41E294CCA218.gif',
+	'197AC009869EA03EB00943E887CF4349.gif',
+];
+
+图们=[
+	'gif/a15b4afegw1f3i4kc8nzsg208c08c400.gif',
+	'gif/a15b4afegw1f3i4kc8nzsg208c08c400.gif',
+	'gif/a15b4afegw1f3i4kbwhkpg20dw07ab29.gif',
+	'gif/a15b4afegw1f3i4jywgpsg208704x4p4.gif',
+	'gif/a15b4afegw1f3i4jry4y1g204603j13s.gif',
+	'gif/a15b4afegw1f3i4jmrh8gg202q02cglu.gif',
+	'gif/a15b4afegw1f3i4jlx3mfg208c04rnkl.gif',
+	'gif/a15b4afegw1f3i4ivflpdg204603wk18.gif',
+	'gif/a15b4afegw1f3ihs5gbl8g203z03nta8.gif',
+	'gif/a15b4afegw1f3im4yx0n6g206e07348j.gif',
+	'gif/a15b4afegw1f3jn6mk7m9g202s02sq40.gif',
+	'gif/a15b4afegw1f3od8rgbjbg206r04wk6a.gif',
+	//'gif/a15b4afegw1f3iag4xbu3g206o07qtja',
+]
+
+歌词='ギリギリ爱 いけないボーダーライン 難易度Gでも 全て壊してみせる キリキリ舞 さらなるGへと 意識が溶ける 体は制御不能 イッちゃうかもね ふざけあった友達と 求めあったあの人と';
+
+歌词=歌词.split(' ');
+
+随机色们='yellow orange blue red green'.split(' ');
+随机颜色=function(){
+	return 随机色们[Math.floor(随机色们.length*Math.random())]
+};
+
+
+girigiri=function(){
+	var 
+	div=document.createElement('div');
+	div.innerHTML=歌词[Math.floor(歌词.length*Math.random())]+'*'+获取打靠总数();
+	div.style.cssText='top:'+(Math.random()*90)+'%;left:'+(Math.random()*90)+'%;color:'+随机颜色();
+	document.body.appendChild(div);
+	setTimeout(function(){
+
+		div.className='girigiri';
+	},1)
+	setTimeout(function(){
+		document.body.removeChild(div);
+	},2000);
+
+	n.dir+=+n.getAttribute('dir')+1;
+};
+
+更换背景=function(){
+	html.style.cssText='background-image:url('+图们[Math.floor(图们.length*Math.random())]+')';
+};
+
+更换背景();
+
+setInterval(更换背景,15000);
+
+D=document;
+全屏=function(){
+	var o=html;
+	if(
+		D.fullscreenElement
+		||
+		D.webkitFullscreenElement
+		||
+		D.mozFullScreenElement
+		||
+		D.msFullScreenElement
+	){
+		D.exitFullscreen?D.exitFullscreen():
+		D.mozCancelFullScreen?D.mozCancelFullScreen():
+		D.webkitExitFullscreen?D.webkitExitFullscreen():
+		D.msExitFullscreen?D.msExitFullscreen():'';
+	}else{
+		o.requestFullscreen?o.requestFullscreen():
+		o.mozRequestFullScreen?o.mozRequestFullScreen():
+		o.webkitRequestFullscreen?o.webkitRequestFullscreen():
+		o.msRequestFullscreen?o.msRequestFullscreen():'';
+	}
+};
+
+全屏显示.onclick=全屏;
+var 
+初次播放=0;
+FM.onplay=function(){
+	初次播放=1;
+};
+
+document.body.ontouchstart=function(){
+	document.body.ontouchstart=null;
+	if(!初次播放){
+		FM.play();
+	}
+}
+
+歌曲们=[
+    '1.m4a',
+	
+];
+
+歌曲=歌曲们[Math.floor(歌曲们.length*Math.random())];
+
+FM.src=歌曲;
+/*FM.play();*/
+
+FM.onerror=function(){
+	
+    this.src='1.m4a';
+	FM.play();
+}
+
+
+
+
+
+</script>
+<div style="display:none">
+
+</div>
+
+
+<xmp id="歌词文本节点">[ti:いけないボーダーライン]
+[ar:ワルキューレ]
+[al:いけないボーダーライン - Single]
+[00:00.00]
+[00:35.00]見つめあって恋をして 無我夢中で追いかけて
+[00:42.00]だけどもっと知りたくてメラメラしてる
+[00:47.50]願うほど謎は増え 思うほど熱になる
+[00:52.00]だからもっととびこむの未開の世界
+[01:00.50]恋とか夢とか誰でも信じるけど
+[01:06.50]そこそこ攻めなきゃつまんないよ
+[01:12.00]ギリギリ爱 いけないボーダーライン
+[01:17.50]難易度Gでも全て壊してみせる
+[01:24.00]ギリギリ舞 さらなるGへと
+[01:29.00]意識は溶ける 体は制御不能
+[01:35.00]いっちゃうかもね
+[01:40.00]
+[01:50.00]ふざけあった友達と求めあったあの時と
+[01:57.00]また会える日のためにキラキラしてる
+[02:03.00]光るほど影は出来 燃えるほどhighになる
+[02:08.00]走るほど見えてくる あぶないライン
+[02:15.00]自由も平和も望めば生まれるけど
+[02:21.00]モタモタしてたら腐っちゃうよ
+[02:27.00]ギリギリ爱 あぶないボーダーレース
+[02:32.00]非常識だね まだ加速しているよ
+[02:39.00]ギリギリ舞
+[02:42.00]限界点なら塗り替えていい
+[02:47.00]破壊と再生から私は出来る
+[02:54.00]
+[03:13.00]ギリギリ爱 いけないボーダーライン
+[03:19.00]難易度Gでも全て壊してみせる
+[03:25.00]ギリギリ舞 さらなるGへと
+[03:32.00]意識は溶ける 体は制御不能
+[03:37.00]いっちゃうかもね
+[03:40.50]ギリギリ爱 いけないボーダーライン
+[03:46.70]燃え尽きながらまだ輝いてみせる
+[03:50.70]ギリギリ舞 あなたのために
+[03:57.50]未来のために何度砕け散っても
+[04:05.00]愛することで生まれ変わる
+[04:16.50]愛されたくて生きて帰る﻿</xmp>
+
+
+<style>
+#lrc{	
+	pointer-events:none;
+	position:absolute;
+	top:35%;
+	left:0;
+	right:0;
+	padding:0 3em;
+	color:blue;
+	text-align:center;
+	font:800 32px/1 sans-serif;
+	font-size:6vw;
+	text-shadow:
+		red 12px 15px 0,
+		green -15px 4px 0,
+		yellow 4px -16px 0;
+	/*
+	-webkit-box-reflect:below -16px -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(.5,transparent),to(#333));
+	*/
+
+	-webkit-animation:shake3 .3s steps(3) infinite;
+	   -moz-animation:shake3 .3s steps(3) infinite;
+		-ms-animation:shake3 .3s steps(3) infinite;
+			animation:shake3 .3s steps(3) infinite;
+}
+
+/* 震颤 */
+@-webkit-keyframes shake3{
+	30%{-webkit-transform:translate(-3px,-5px);}
+	60%{-webkit-transform:translate(6px,3px);}
+}
+@-moz-keyframes shake3{
+	30%{-moz-transform:translate(-3px,-5px);}
+	60%{-moz-transform:translate(6px,3px);}
+}
+@-ms-keyframes shake3{
+	30%{-o-transform:translate(-3px,-5px);}
+	60%{-o-transform:translate(6px,3px);}
+}
+@keyframes shake3{
+	30%{transform:translate(-3px,-5px);}
+	60%{transform:translate(6px,3px);}
+}
+</style>
+
+<div id="lrc"></div>
+  
+
+<style>
+
+#dm{width:100%;pointer-events:none;font-size:.8em;}
+#dm-top{text-align:center;}
+#dm-bottom{
+	position:absolute;bottom:0;left:0;right:0;
+	text-align:center;}
+
+#dm span{font:1em \5FAE\8F6F\96C5\9ED1,sans-serif;font-weight:bold;
+	color:#FFF;text-shadow:0 1px 0 #000;
+	white-space:nowrap;max-width:800px;
+	font-size:28px;}
+
+#dm .size-1{font-size:2.5em;}
+#dm .size-2{font-size:2em;}
+#dm .size-5{font-size:1.5em;}
+#dm .size-9{font-size:16px;}
+
+
+#dm .dm-type-none{
+	position:absolute;left:100%;
+	animation:dm-none 50s linear;-webkit-animation:dm-none 50s linear;}
+
+
+@keyframes dm-none{
+	to{transform:translateX(-5000px)}
+}
+
+@-webkit-keyframes dm-none{
+	to{-webkit-transform:translateX(-5000px)}
+}
+
+#dm .dm-type-right{
+	position:absolute;z-index:2;right:100%;
+	animation:dm-right 50s linear;-webkit-animation:dm-right 50s linear;}
+
+
+@keyframes dm-right{
+	to{transform:translateX(5000px)}
+}
+
+@-webkit-keyframes dm-right{
+	to{-webkit-transform:translateX(5000px)}
+}
+
+
+#dm .dm-type-top,
+#dm .dm-type-bottom{
+	display:block;margin:0 auto;
+	animation:dm-top 5s linear;-webkit-animation:dm-top 5s linear;}
+
+@keyframes dm-top{
+	form{opacity:0;}
+	5%{opacity:1;}
+	95%{opacity:1;}
+	to{opacity:0;}
+}
+
+@-webkit-keyframes dm-top{
+	form{opacity:0;}
+	5%{opacity:1;}
+	95%{opacity:1;}
+	to{opacity:0;}
+}
+
+
+#dm .dm-color-red{color:red}
+#dm .dm-color-blue{color:blue}
+#dm .dm-color-yellow{color:yellow}
+#dm .dm-color-green{color:green}
+
+
+#dm-f{position:absolute;bottom:130px;z-index:3;
+	width:500px;left:50%;margin-left:-180px;}
+#dm-f input{width:300px;}
+#dm-f select{
+	display:block;
+	margin:0;padding:0;border:0;}
+
+
+
+#dm-f button[type="submit"]{
+	font-size:1em;
+}
+
+.plan{position:absolute;top:0;left:0;right:0;z-index:4;
+	cursor:ew-resize;height:12px;}
+.plan div{position:absolute;top:0;left:0;height:6px;width:30px;}
+#planPlay{background:red;box-shadow:-1px -1px 0 rgba(0,0,255,.2) inset;width:0%;
+	border-radius:9em;
+	min-width:4px;max-width:100%;}
+#planPlay b{background:#EEE;background:rgba(240,240,240,.9);box-shadow:1px 2px 0 rgba(0,0,0,.1);color:#666;
+	font-family:Courier,Arial,serif;font-size:18px;line-height:28px;width:80px;text-align:center;border-radius:10px;
+	position:absolute;top:20px;right:-34px;}
+#planPlay b:after{content:'';position:absolute;top:-30px;bottom:0;left:-10px;right:-10px;}
+
+.plan b{opacity:0;pointer-events:none;}
+.plan:hover b,.onmouse b{opacity:1;pointer-events:auto;}
+
+#planPlay b i{position:absolute;top:-9px;left:50%;margin-left:-7px;
+	border:7px dashed transparent;border-top:0;border-bottom:9px solid #EEE;border-bottom-color:rgba(240,240,240,.9);}
+
+#planLoad{background:#EEE;background:rgba(120,120,120,.1);width:4px;box-shadow:0 1px 0 rgba(0,0,0,.1) inset;}
+
+
+
+</style>
+
+<label>
+	<button id="鬼畜加速">鬼畜加速</button>
+</label>
+
+<div class="plan">
+	<div id="planLoad"></div>
+	<div id="planPlay" class="nomouse">
+		<b><span></span><i></i></b>
+	</div>
+</div>
+
+
+<div id="dm">
+	<div id="dm-none"></div>
+	<div id="dm-right"></div>
+	<div id="dm-top"></div>
+	<div id="dm-bottom"></div>
+</div>
+
+<script>
+
+鬼畜加速.onclick=function(){
+	switch(this.innerHTML){
+		case '鬼畜加速':
+			FM.playbackRate=1.2;
+			this.innerHTML='疯狂加速';
+			break;
+		case '疯狂加速':
+			FM.playbackRate=1.4;
+			this.innerHTML='深度加速';
+			break;
+		case '深度加速':
+			FM.playbackRate=1.6;
+			this.innerHTML='无药可救';
+			break;
+		case '无药可救':
+			FM.playbackRate=2;
+			this.innerHTML='💊💊💊';
+			break;
+		case '💊💊💊':
+			FM.playbackRate=3;
+			this.innerHTML='💊💊💊💊';
+			break;
+		case '💊💊💊💊':
+			FM.playbackRate=1;
+			this.innerHTML='鬼畜加速';
+			break;
+	}
+
+	cNz('加速*'+FM.playbackRate);
+    
+};
+
+/*!function(){
+
+
+
+u2b=FM;
+var du='http://itorr.sinaapp.com/fm/x/?a=dm&id=999999&_r='+Math.random();
+
+
+}*/</script>
+<script src="plan.js"></script>
+    <script> 
+function stop(){ 
+return false; 
+} 
+document.oncontextmenu=stop; 
+</script>

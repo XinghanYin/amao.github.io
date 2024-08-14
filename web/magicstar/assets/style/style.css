@@ -1,0 +1,91 @@
+body,h1,form{
+	margin:0;
+}
+html{
+	font:1em "BlinkMacSystemFont","Microsoft YaHei","微软雅黑","WenQuanYi Micro Hei",sans-serif;
+	text-align:center;
+}
+input{
+	font:inherit;
+}
+input:focus{
+	outline:none;
+}
+::selection{
+	background:rgba(0,149,255,0.1);
+}
+a{
+	text-decoration:none;
+	color:#58a4dd;
+}
+h1{
+	font-size:3.5em;
+	padding:1.5em 0;
+	color:#0bb1f5;
+	font-weight:200;
+}
+h1:before{
+	content:'🌟 ';
+}
+#输入框 input{
+	ime-mode:inactive;
+	ime-mode:disabled;
+
+	border:none;
+	
+	font-size:1.4em;
+	padding:.5em .7em;
+	max-width:30em;
+	width:100%;
+	background:#F8F8F8;
+	
+	box-shadow:
+		0 0 0 1px #DDD inset,
+		0 1px 2px rgba(0,0,0,.2);
+	
+	transition: box-shadow .3s ease;
+
+	border-radius:4px;
+
+	text-align:center;
+	-webkit-appearance:none;
+
+}
+#输入框 input:focus{
+	box-shadow:
+		0 0 0 2px #58a4dd inset,
+		0 3px 3px rgba(0,0,0,.2) inset;
+}
+#结果{
+	padding:2em 0;
+}
+#结果 a{
+	display:block;
+	padding:.5em;
+	font-size:1.4em;
+}
+#结果 a:hover{
+	background:rgba(88,164,221,.1);
+}
+.text-banner{
+	font-size:1.4em;
+	line-height:4em;
+	color:#DDD;
+}
+footer{
+	font-size:1.4em;
+	line-height:6em;
+	color:#DDD;
+}
+
+@media (max-width:600px) {
+	h1{
+		padding:.5em 0;
+	}
+	h1:before{
+		display:none;
+	}
+	#输入框{
+		padding:0 1em;
+	}
+}

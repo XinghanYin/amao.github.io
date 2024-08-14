@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chr15tama0 - a real gamer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Studio for design and code based in Chengdu, China.">
+        <meta name="author" content="Amaok.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="black">                            <!-- Chrome, Firefox OS and Opera -->
+        <meta name="msapplication-navbutton-color" content="black">          <!-- Windows Phone -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!-- iOS Safari -->
+        
+        
+        <link rel="icon" href="http://www.amaok.com/favicon.ico" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main class="invisible">
+            <hr>
+            <p>
+                Chr15tama0 - a real gamer<br>
+                <br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                A Real Gamer based in Chengdu, China.
+                <br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                Student AND Codedesigner in ··UESTC.<br>
+                Switch / Ps4 / Pc GAMER <br>
+                Content comes mostly from <a href="http://www.amaok.com">here</a>.<br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                Email for inquiries or just write to say<br>
+                <a href="mailto:6151810@qq.com?subject=ciao" class="swapper">Hell0</a>.<br>
+                <br>
+            </p>
+            <hr>
+            <p>
+                <a>Favorite:</a><br>
+                Breath of the Wild<br>
+                Steins;Gate<br>
+                Fire Emblem: Three Houses<br>
+                SEKIRO: Shadows Die Twice<br>
+                Final Remix-<br>
+                Command and Conquer: Generals<br>
+                Xenoblade 2<br>
+                LittleBigPlanet<br>
+                Dark Souls 3<br>
+                Stardew Valley<br>
+                Katana ZERO<br>
+                Loco Roco<br>
+                Dead Cells<br>
+              	Minecraft<br>
+            </p>
+            <hr>
+            <p>
+                <a>Want to Play:</a><br>
+                ALLLLLLLL GOOOOOOOD GAAAMEEEEEESSSSSSSSSS<br>
+                <br>
+            </p>
+           <hr>
+            <p>
+                More:<br>
+                <a target="_blank" href="https://steamcommunity.com/id/Amaok2000">Steam</a><br>
+                <a target="_blank" href="http://6151810.qzone.qq.com/">Qzone</a><br>
+            </p>
+        </main>
+    </body>
+    <script src="main.js"></script>
+    <script>
+
+        js.ert.setup( function(){
+           js.ert.track(document.querySelector('main'));
+        });
+
+        // old tiroir code
+        window.addEventListener('load', function(){
+
+            // Knuth shuffle:
+            function shuffle(array) {
+                var idx = array.length;
+                while (0 !== idx) {
+                    var r = Math.floor(Math.random() * idx);
+                    idx -= 1;
+                    var t = array[idx];
+                    array[idx] = array[r];
+                    array[r] = t;
+                }
+                return array;
+            }
+
+            var s = shuffle([
+                // ---- cheers
+                'hi',
+                'yo',
+                'ciao',
+                'viva',
+                'salut',
+                'hello',
+                'grüezi',
+                'prosit',
+                'olà olà',
+                'bonjour',
+                'namaste',
+                'guten Tag',
+                'shaba-daba',
+                'go to hell',
+                'buona notte',
+                'buenas dias',
+                'hasta la victoria',
+                'ooooooooooooooooooooh',
+                // ---- love
+                '“I love you”',
+                // '“I ♥ ♠ ♦ ♣”',
+                '“I love my cat”',
+                '“I want to be your slave”',
+                // ---- thats
+                'that life is life',
+                'that you liked your dinner',
+                'that Gilgamesh is your father',
+                'that you don’t want to write me',
+                'that it’s time for a new haircut',
+                'that sex or fox are better than fax',
+                'that it’s common to say it’s common',
+                'that aaaah is not the same as ooooh',
+                // ---- colors
+                'that blue is your favourite color',
+                'that gold is your favourite color',
+                'that gray is your favourite color',
+                // ---- numbers
+                'that four has four letters',
+                'that five has four letters',
+                'that nine has four letters',
+                'that π is close to, but not exactly 3.1415',
+                // 'that 1 one stays to 2 twos like 3 trees stay to 4 Fords',
+                // ---- animals
+                'that slick worms eat silk',
+                'that sheep sings while ship sinks',
+                'that gold is fish and golf is dish',
+                'that you saw a cat sleeping in a box',
+                'that the fly flies and the flies fly',
+                // 'that a bird’s burden is the weight of a feather',
+                // 'that bird is feather’s father but not vice-versa',
+            ]);
+
+            var c = 0;
+            function swap(){
+                c = ++c % s.length;
+                var e = document.querySelector('main .swapper');
+                //e.href = 'mailto:6151810@qq.com?subject=' + s[c];
+                e.innerText = s[c];
+                js.ert.refresh();
+            }
+            swap();
+            setInterval( swap, 10000);
+        });
+    </script>
+</html>

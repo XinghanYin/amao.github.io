@@ -1,0 +1,10 @@
+{
+	"title":"能不能好好说话",
+	"interfaces":[{"method":"post",
+		"path":"/guess",
+		"body":{"text":"String"},
+		"response":[{"name": "gzs", "trans": ["工作室", "高中生", "购置税"]}]},
+		{"method":"post","path":"/translation/:name",
+		"body":{"text":"String"},"response":null}],
+	
+}

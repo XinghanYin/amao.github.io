@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>连环爆炸 —— Amao's Ball</title>
+<meta name="viewport" content="width=800px, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<link rel="canonical" href="http://ball.ihtml.org">
+<meta property="og:url" content="http://ball.ihtml.org">
+<meta property="og:site_name" content="连环爆炸 - Advanced - The Game">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Create a Chain Reaction of explosions to clear the level. This is the advanced level.">
+<meta property="og:image" content="square.png">
+<script type="text/javascript" src="mootools-core-1.4.5.js"></script>
+<script type="text/javascript" src="touch.js"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="chainrxn-2.0.js"></script>
+<script src="http://use.typekit.com/ene4zze.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<script>
+if(Browser.isMobile){
+	document.addEvent('touchmove', function(event){
+		event.preventDefault();
+	});
+}
+</script>
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <h1>Amao's Ball</h1>
+  <h2>Advanced</h2>
+	<div id="container">
+		<canvas id="ballField"></canvas>
+		<div id="ballsExpanded"></div>
+    <div id="totalScore"></div>
+    <div id="levelScore"></div>
+    <div id="levelNumber"></div>
+		<div id="notifierBox">
+			<div id="notifierTitle">连环爆炸</div>
+			<div id="notifierButton">开始游戏</div>
+		</div>
+	</div>
+ <div class="supported">See the <a href="http://www.ihtml.org">Amaotec</a>? | Supported by <a href="http://www.amaok.com">Amao</a> and <a href="http://yun.ihtml.org">Amaoyun</a>.</div>
+</body>
+</html>

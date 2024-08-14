@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Build -->
+    <title></title>
+    <meta name="description" content="Lingoys!Art.没有回忆就去创造回忆，没有道路就去开辟道路！">
+    <meta name="keywords" content="Lingoys Lingoys!Art 团队">
+    <link rel="stylesheet" type="text/css" href="path.css">
+  <body>
+    <div class="ch header">
+      <div class="bg"></div>
+      <div class="inner">
+ 
+      </div>
+    </div>
+    <div class="ch about">
+      <div class="inner">
+        <h1 class="chtitle">关于</h1>
+        <div class="left clear">
+   
+        </div>
+        <div class="right clear">
+          
+        </div>
+      </div>
+    </div>
+    <div class="ch userbox">
+      <div class="inner userlist">
+        <h1 class="chtitle">成员</h1>
+     
+      </div>
+    </div>
+      
+    </div>
+    <div class="ch findus">
+      <div class="inner">
+        <h1 class="chtitle">发现</h1>
+        <div class="linkbox">
+    
+        </div>
+        <div class="footer">
+         
+        </div>
+      </div>
+    </div>
+
+    <script src="//res.suzu.me/libs/js/jquery-2.1.1.min.js"></script>
+    <script type='text/javascript' src='jquery.particleground.min.js'></script>
+    <script>
+      window.onload=function(){  changeDivHeight();  }  
+      window.onresize=function(){  changeDivHeight();  }  
+      function changeDivHeight(){               
+          var h = document.documentElement.clientHeight;
+          $(".ch").css("min-height",h+"px");
+      }
+      $(document).ready(function(){
+        $('.header .bg').particleground({
+          dotColor: '#6f407a',
+          lineColor: '#61346b'
+        });
+        changeDivHeight();
+      });
+    </script>
+  </body>
+</html>

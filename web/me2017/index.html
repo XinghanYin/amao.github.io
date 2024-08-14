@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amaok</title>
+    <link rel="stylesheet" href="o/iconfont.css">
+    <link rel="stylesheet" href="o/i.css">
+</head>
+<body>
+
+<div class="section vertical" id="b">
+    <div id="me">
+        <img src="o/avatar.png">
+        <div class="info">
+            <h1>
+                阿毛
+                <span class="c1">#Algorithm / WEB / VG</span>
+                <span class="icon">
+                    <a href="#"><i class="iconfont icon-github"></i></a>
+                    <a href="mailto:yeenxh@gmail.com"><i class="iconfont icon-emal-3"></i></a>
+                </span>
+            </h1>
+            <p class="c1" id="y">Loading...</p>
+        </div>
+    </div>
+    <footer class="ce">一句话内容来自一言 (Hitokoto)</footer>
+</div>
+<!--
+<div class="section ce" id="c">
+    <h1>Skill</h1>
+    <p><figure>PHP</figure><progress value="70" max="100"></progress></p>
+    <p><figure>Div+CSS</figure><progress value="75" max="100"></progress></p>
+    <p><figure>Javascript</figure><progress value="62" max="100"></progress></p>
+    <p><figure>UI / Illustrator</figure><progress value="30" max="100"></progress></p>
+</div>
+-->
+<div class="section" id="d">
+    <div class="introduction">
+        <h1>Reading</h1>
+        <!--<p>孩子是要别人教的，毛病是要别人医的，即使自己是教员或医生。但做人处事的法子，却恐怕要自己斟酌，许多人开来的良方，往往不过是废纸。</p>-->
+        <p>生于忧患，死于安乐。</p>
+    </div>
+    <div class="reading">
+        <book>挑战程序设计</book>
+        <book>霍乱时期的爱情</book>
+        <book>高效的HTML5</book>
+        <book>银河帝国</book>
+        <book>忒修斯之船</book>
+        <book>必然</book>
+    </div>
+</div>
+
+<!--<div class="section c" id="e">
+    <div class="标题 c">
+        <h1>Link 友情链接</h1>
+        <img src="../i/loading.gif"/>
+        <a href="#apply">
+            <h2>+</h2>
+        </a>
+    </div>
+
+    <div class="l c ce" id="l"></div>
+
+</div>
+
+<div class="section vertical c" id="donate">
+    <div class="container">
+        <h1>捐助</h1>
+        <div class="d-img">
+
+            <span data-n="alipay">
+                <img src="o/alipay.jpg" width="200">
+            </span>
+
+            <span data-n="wechat">
+                <img src="o/wechat.png" width="200">
+            </span>
+
+        </div>
+        <p>每一笔捐助帮助我更好地运营，所有费用将用于支付 域名、服务器、Hostker APP 费用</p>
+        <p>Thank You for your Help.</p>
+    </div>
+
+</div>
+-->
+</body>
+<script>
+    var
+            D = document,
+            W = self,
+            $ = function(x,t){
+                if(!t)
+                    return D.querySelector(x);
+                else
+                    return D.querySelectorAll(x);
+            },
+            x = function (m,url,func,d,j) {
+                var xhr = new XMLHttpRequest();
+
+                m = m.toUpperCase();
+
+                xhr.open(m,url);
+                xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                xhr.send(d||'');
+                xhr.onreadystatechange = function () {
+                        if (xhr.readyState ==4 && xhr.status>=200<302){
+                            if(j == 1)  var r = JSON.parse(xhr.response);
+                            func(r);
+                        }
+
+                    return xhr
+                }
+
+            };
+
+    Element.prototype.推 = function (a) {
+        return this.appendChild(a)
+    };
+    Element.prototype.自杀 = function () {
+        return this.parentNode.removeChild(this)
+    };
+    $.创造 = function (a) {
+        return D.createElement(a)
+    };
+
+    x('GET','https://hitoapi.cc/s/',function(y){
+        $('#y').innerText = y.text;
+    },'',1);
+
+    $('.标题>a').onclick = function(){
+        $('#l').innerHTML = '<form action="#" id="add"> ' +
+                '<input type="text" placeholder="http://..." id="domain"><br> ' +
+                '<input type="email" placeholder="@email.com" id="email"> ' +
+                '<input type="submit" style="display: none"> ' +
+                '</form>';
+
+        $('.标题>h1').innerHTML = '申请友链';
+        this.自杀();
+
+        return $('#add').onsubmit = function(e){
+            e.preventDefault();
+
+            var
+                    domain = $('#domain').value,
+                    email = $('#email').value;
+
+            (!(/\w+((-w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+/).test(email))?
+                    alert('邮箱格式错误'):
+                    (!(/[^\s]+\.[^\s]*/).test(domain))?
+                            alert('域名格式错误'):
+                            x('POST','./x.php',function(data){
+
+                                if(data.success){
+                                    $('#l').innerHTML = '<h1>申请提交成功，5秒后刷新</h1>'
+                                }
+
+                                setTimeout(location.reload,5000)
+
+                            },'domain='+domain+'&email='+email,1)
+
+        };
+    };
+
+    W.onresize = function(){
+        $('#b').style.height = D.documentElement.clientHeight+'px';
+    };
+    W.onresize();
+
+
+</script>
+<script>
+    x('GET','./o/link.json?r='+Math.random(),function (数据) {
+        var
+                链接盒 = $('#l'),
+                链接数组 = 数据.链接们;
+
+        for(var i = 0;i<链接数组.length;i++){
+                    链接盒.innerHTML +=
+                            "<a href=\'" + 链接数组[i].地址 + "\'>" + "<div>" + "<h1>" + 链接数组[i].名字 + "</h1></div>" + "</a>";
+        }
+
+        $('.标题 img').自杀();
+
+    },'',1)
+</script>
+</html>

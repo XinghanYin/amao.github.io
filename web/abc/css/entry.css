@@ -1,0 +1,189 @@
+/*reset*/
+
+* {
+padding:0;
+margin:0;
+border:0;
+offset:0;
+vertical-align:baseline;
+list-style:none;
+text-rendering:optimizeLegibility;
+-webkit-text-size-adjust:none;
+-webkit-tap-highlight-color:transparent;
+-webkit-font-smoothing:antialiased }
+
+body {
+background: #fdfdfd;
+color: #333;
+font: 18px "ff-din-round-web", "helvetica neue", helvetica, sans-serif;
+line-height: 1.5em;
+word-wrap:break-word; }
+
+a {
+color: inherit;
+text-decoration: none;	
+}
+
+a:hover {
+opacity: 0.4;	
+}
+
+::selection {	
+background-color: #e0edf8;/*safari*/
+}
+
+::-moz-selection {
+background-color: #e0edf8;/*firefox*/
+}
+
+/* go */
+
+.column {
+display: block;
+position: absolute;
+left: 50%;
+width: 40%;
+max-width: 500px;	
+}
+
+.entry {
+margin: 100px 0;	
+}
+
+.entry p {
+padding-bottom: 5px;	
+}
+
+.entry p a {
+text-decoration: underline;	
+}
+
+h1 {
+font-size: 44px;
+line-height: 1.3em;
+padding:0 0 6px;
+font-weight: 400;	
+}
+
+h5 {
+font-size: 14px;
+line-height: 1.5em;
+font-weight: 400;
+color: #888;	
+}
+
+h5 a {
+text-decoration: underline;	
+}
+
+h6 {
+font-size: 20px;
+line-height: 1.5em;
+font-weight: 500;
+padding:10px 0 0;	
+}
+
+h6 img {
+width: 28px;
+padding: 0 4px;
+vertical-align: middle;
+margin-top: -5px;	
+}
+
+h6 img:hover {
+opacity: 0.6;	
+}
+
+.media {
+margin: 110px 30px 300px 0;
+display: block;
+position: absolute;
+right: 50%;
+width: 40%;
+max-width: 500px;		
+}
+
+.media img {
+width: 100%;	
+}
+
+.close {
+font-size: 15px;
+position: absolute;
+top: 20px;
+right: 20px;
+z-index: 10;
+width: 100px;
+}
+
+#video {
+position: relative;
+display: block;
+margin: 0;
+padding: 0;	
+}
+
+.videoWrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+height: 0;
+margin-bottom: 10px;
+}
+
+.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/*mobile*/
+
+@media screen and (max-width:860px) {
+
+h1 {
+font-size: 40px;
+}
+
+.column,
+.media {
+display: block;
+position: relative;
+left: 2%;
+width: 100%;
+max-width: 80%;
+padding: 0 15px;
+box-sizing: border-box;
+float: left;	
+}
+
+.media {
+margin: 0 0 15px;
+}
+
+.entry {
+margin: 30px 0 15px;	
+}
+
+}
+
+@media screen and (max-width:540px) {
+
+.column,
+.media {
+left: 0;
+width: 100%;
+max-width: 100%;
+padding: 0 10px;	
+}
+
+.close {
+right: auto;
+display: block;
+top: auto;
+position: relative;
+padding: 15px 10px 20px;
+}
+
+}
